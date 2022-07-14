@@ -9,141 +9,268 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Montserrat:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Fascinate&family=Montserrat:wght@400&display=swap" rel="stylesheet"/>
-
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
+
+<!--Proyecto: Portafolio-->
+
+
+<!-- Sección de links de navegación -->
+
 <body>
+   
     <header>
         <nav>
             <ul class="lista">
-                <li><a class="link" href="hola">HOLA</a></li>
-                <li><a class="link" href="conocimientos">CONOCIMIENTOS</a></li>
-                <li><a class="link" href="proyectos">PROYECTOS</a></li>
-                <li><a class="link cambioboton" href="contacto">CONTACTO</a></li>
+                <li><a class="link" href="#presentacion">HOLA</a></li>
+                <li><a class="link" href="#conocimientos">CONOCIMIENTOS</a></li>
+                <li><a class="link" href="#proyectos">PROYECTOS</a></li>
+                <li><a class="link cambio-boton" href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
 
         
     </header>
-
+<!-- ************************************************************************************************************************************************************************************************************************************** -->
+   
+<!-- Sección de presentación  -->
 
     <section id="presentacion">
         <div class="info">
              <h2>¡Hola! Soy</h2>
              <h1>Rocio Quiroz</h1>
-             <p class="parrafopresentacion">Instrumentadora quirúrgica, acompañante terapéutico, Bibliotecaria de Instituciones Educativas...próximamente desarrolladora Front End.</p>
-             <a class="cambioboton">LO QUE HAGO</a>
+             <p class="parrafo-presentacion">Instrumentadora quirúrgica, acompañante terapéutico, Bibliotecaria de Instituciones Educativas...próximamente desarrolladora Front End.</p>
+             <a class="cambio-boton">LO QUE HAGO</a>
        </div>
 
        <div>
-        <img class="estilofoto" src="imagenes/foto-presentacion.png" alt="Blooming image">
+        <img class="estilo-foto" src="imagenes/presentacion.png" alt="Chica programando">
        </div>
    </section>
-
+<!-- ********************************************************************************************************************************************************************************************* -->
    
-   <section>  
-      <div>
+<!-- Sección de habilidades -->
+
+   <section id="conocimientos">  
+      <div class="div-habilidades">
           <h2>Mis conocimientos</h2>
           <p>Respecto al mundo IT, estos son mis conocimientos aplicados al desarrollo Front End.</p>
       </div>
-     <div class= "posicioniconos">
+
+     <div class= "posicion-iconos">
+
        <div class="icono">
-           <img class="tamañoicono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="Icono HTML" />
+           <img class="tamaño-icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="Icono HTML" />
+           <h3>HTML 5</h3>
        </div>
 
-    
-
        <div class="icono">
-         <img class="tamañoicono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="Icono CSS3"/>
+          <img class="tamaño-icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="Icono CSS3"/>
+          <h3>CSS 3</h3>
        </div>
    
        <div class="icono">
-         <img class="tamañoicono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" alt="Icono Git" />
+          <img class="tamaño-icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" alt="Icono Git" />
+          <h3>GIT</h3>
        </div>
 
        <div class="icono">
-          <img class="tamañoicono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="Icono Git Hub" />
+          <img class="tamaño-icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="Icono Git Hub" />
+          <h3>Git Hub</h3>
        </div>
 
        <div class="icono">
-          <img class="tamañoicono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Icono SASS" />
-       </div>
-
-       <div>
-          <img class="tamañoicono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"  alt="Icono Java Script"/>        
+          <img class="tamaño-icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Icono SASS" />
+          <h3>Sass</h3>
        </div>
 
        <div class="icono">
-          <img class="tamañoicono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="Icono React" />
+          <img class="tamaño-icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Icono Java Script"/>
+          <h3>Java Script</h3>      
        </div>
+
+       <div class="icono">
+          <img class="tamaño-icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="Icono React" />
+          <h3>React</h3>
+       </div>
+
+     </div>
+
+     <div class="informacion-extra">
+        <p><span>&#11088</span> Querés saber mas sobre Desarrollo Front End te recomiendo visitar el siguiente enlace <span>&#128071</span>:</p>
+        <br/>
+        <br/>
+        <a href="https://youtu.be/a-i7muENvXQ"><span>Taller introductorio Programación Front End ADA ITW:</span> https://youtu.be/a-i7muENvXQ</a>
      </div>
      
     </section>
+<!-- ******************************************************************************************* -->
+   
+<!-- Sección de cita -->
 
    <section>
-      <p>&#10080</p>
-      <blockquote><p></p></blockquote>
-      <cite></cite>
+        <div class="seccion-de-cita">
+            <div class="contenedor-comillas">
+            
+             <span>&#8221</span>
+
+            </div>
+
+            <div>
+                 <blockquote><p>El comienzo siempre es hoy</p></blockquote>
+            </div>
+
+            <div class="autor"> 
+               <cite>Mary Shelley</cite>
+            </div>
+
+        </div>
 
     </section>
 
-    <section>
+<!-- ******************************************************************************************* -->
+   
+<!-- Sección de proyectos -->
+
+    <section id="proyectos">
        <div>
-          <h1>Mis proyectos</h1>
+          <h2>Mis proyectos</h2>
           <p></p>
         </div>
 
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <div class="posicion-proyectos">
+            <div class="proyecto-especifico">
+                <img class="img-proyectos" src="imagenes/" alt="Imágen de presentación del portafolio">
+                <h3>Portafolio</h3>
+            </div>
+
+            <div class="proyecto-especifico">
+                <img class="img-proyectos" src="imagenes/Creativity_editor-de-memes.png" alt="Chica editando en PC y móvil">
+                <h3>Editor de memes</h3>
+            </div>
+
+            <div class="proyecto-especifico">
+                <img class="img-proyectos" src="imagenes/Gaming_match.png" alt="Chicos con un joystick">
+                <h3>MatcheADAs</h3>
+            </div>
+
+            <div class="proyecto-especifico">
+                <img class="img-proyectos" src="imagenes/Calculator_ahorradas.png" alt="Hombre con calculadora">
+                <h3>AhorrADAs</h3>
+            </div>
+
+            <div class="proyecto-especifico">
+                <img class="img-proyectos" src="imagenes/Searching_buscador-de-comics.png" alt="Chica buscando">
+                <h3>Buscador de cómics</h3>
+            </div>
+
+            <div class="proyecto-especifico">
+                <img class="img-proyectos" src="imagenes/peliculas-react.png" alt="Hombre en sillón con pochoclos">
+                <h3>Películas React</h3>
+            </div>
+            
+           
 
         </div>
 
     </section>
 
-    <section>
-        <section>
-            <div>
-              <h1>Contactame</h1>
-              <p></p>
-            </div>  
+<!-- ******************************************************************************************* -->
+   
+<!-- Sección de contacto -->
+
+    <!-- Sección de contacto via redes y mail (links)-->
+    <section id="contacto" class="contacto">
+        <section class="contact-style">
+            <div class="contact-me">
+              <h2>Contactame</h2>
+              <p>Estas son las vías de contacto, mis redes, las cuales podes visitar y/o mandarme mensajes. Algunas mas personales, otras mas formales... elegí la que mas te guste. </p>
+            </div> 
+            
+            <div class="redes">  
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="Icono Linkedin" />
+                <a href="">vrocioquiroz</a>
+            </div>
+
+            <div class="redes"> 
+                <img src="imagenes/gmail-icon.png" alt="Icono Gmail"/>
+                <a href="">vrocioquiroz@gmail.com</a>
+            </div>
+
+            <div class="redes">
+                <img src="imagenes/discord-icon.png" alt="Icono Discord"/>
+                <a href="">RocioQuiroz</a>
+            </div>
+
+            <div class="redes">
+                <img src="imagenes/ig-icon.png" alt="Icono Instagram"/>
+                <a href="">roci_quiroz</a>
+            </div>
+
+
 
         </section>
-
-        <section>
+        
+        <!-- Sección de contacto directo (formulario) -->
+        <section class="contact-style">
             <div>
-              <h1>Escribime</h1>
+              <h2>Escribime</h2>
            </div>
 
-           <div>
-              <form></form>
-              <button>Enviar</button>
+           <div class="formulario">
+              <form action="" method="GET">
+                <p>Nombre*   <input type="text" name="nombre" placeholder="Escriba aquí su nombre" maxlength="15"></p>
+                <p>Apellido* <input type="text" name="apellido" placeholder="Escriba aquí su apellido" maxlength="15"></p>
+                <p>Email*    <input type="email" name="email" placeholder="Ej. juan.perez@gmail.com"></p>
+                <p>Comentario*</p>
+                <textarea name="mensaje" id="" cols="50" rows="10" placeholder="Dejá acá tu comentario"></textarea>
+                <p><input  type="submit" value="Enviar"></p>
+                
+              </form>
+            
            </div>
         </section>
     </section>
 
+<!-- **************************************************************************************** -->
+
+    <!-- Pie de página: contactos y link de navegación -->
+
     <footer>
 
-        <nav>
-            <div>
-                <ul>
-                   <li><a href="hola">HOLA</a></li>
-                   <li><a href="conocimientos">CONOCIMIENTOS</a></li>
-                   <li><a href="proyectos">PROYECTOS</a></li>
-                   <li><a href="contacto">CONTACTO</a></li>
+        <nav class="nav-pie">
+            <div >
+                <ul class="pie-pagina" >
+                   <li><a class="link" href="#presentacion">HOLA</a></li>
+                   <li><a class="link" href="#conocimientos">CONOCIMIENTOS</a></li>
+                   <li><a class="link" href="#proyectos">PROYECTOS</a></li>
+                   <li><a class="link" href="#contacto">CONTACTO</a></li>
                 </ul>
             </div>
 
-            <div>
-
+            <div class="redes-position">
+                <div class="redes">  
+                    <a href=""><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="Icono Linkedin" /></a>
+                </div>
+    
+                <div class="redes"> 
+                    <a href=""><img src="imagenes/gmail-icon.png" alt="Icono Gmail"/></a>
+                </div>
+    
+                <div class="redes">
+                    <a href=""><img src="imagenes/discord-icon.png" alt="Icono Discord"/></a>
+                </div>
+    
+                <div class="redes">
+                    <a href=""><img src="imagenes/ig-icon.png" alt="Icono Instagram"/></a>
+                </div>
+    
+    
             </div>
 
-            <div>
-                <p>Hecho con <span>&#10084</span> por Rocio Quiroz</p>
+            <div class="msj-final-autor">
+                <p>Hecho con <span class="heart">&#10084</span> por <span class="firma"> RoQuiroz</span></p>
             </div>
         </nav>
     </footer>
