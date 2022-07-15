@@ -1,11 +1,12 @@
 
 body{
     box-shadow: rgb(44, 62, 80) 15px 0px 15px -15px inset, rgb(44, 62, 80) -15px 0px 15px -15px inset;
-}
+   
+   }
 
 *{
     margin: 0;
-   
+    box-sizing: border-box;
     
 }
 
@@ -29,7 +30,7 @@ position: fixed;
 
 nav{
     background-color: #F39189;
-    height: 70px;
+    height: 90px;
     padding-top: 30px;
     width: 100%;
 }
@@ -67,6 +68,7 @@ nav{
 
 
 #presentacion{
+    width: 100%;
     padding-top: 100px;
     display: flex;
     height: 800px;
@@ -78,8 +80,8 @@ nav{
 
 .estilo-foto{
     width: 550px;
-    height: 550px;
-    padding-right: 100px;
+    height: 500px;
+    padding-right: 50px;
     
     
 }
@@ -127,7 +129,7 @@ h1{
 .parrafo-presentacion{
     text-align:left;
     padding-right: 10px;
-    background-color: darkkhaki;
+   
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -140,22 +142,24 @@ h1{
     
 
 
-h2{ padding-top: 100px;
+h2{ 
+   padding-top: 100px;
    font-family:'Caveat', cursive;
    text-align: center;
    font-size: 70px;
    font-weight: 900;
+   
 
 }
 
 
 .icono{
+   
    width: 250px;
-   height: 250px ;
-  
+   height: 250px;
    border:1px solid  rgb(191, 190, 190);
    border-radius:10px;
-   margin-top: 25px;
+   margin: 25px;
 
 }
 
@@ -167,9 +171,10 @@ h2{ padding-top: 100px;
 .tamaño-icono{ 
    display:flex;
    text-align: center;
-   width:60%;
+   width:80%;
    padding-left:50px;
    padding-top: 25px;
+   padding-bottom: 20px;
   
 }
 
@@ -180,14 +185,14 @@ h2{ padding-top: 100px;
    flex-wrap: wrap;
    justify-content: space-around;
    margin: 50px 200px 0px 200px;
- 
+
+
 }
 
 .div-habilidades p{
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    font-size: 20px;
-   display: flex;
-   justify-content: center;
+   text-align: center;
    padding-top: 40px;
 }
 
@@ -206,12 +211,13 @@ h2{ padding-top: 100px;
 .informacion-extra p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
+    padding-left: 10px;
 }
 
 .informacion-extra a{
    color: purple;
    font-size: 18px;
-   padding-left: 25px;
+   padding-left: 40px;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -267,7 +273,16 @@ h2{ padding-top: 100px;
 
 #proyectos{
     background-color: #F39189;
+    padding-bottom: 100px;
 
+}
+
+ #proyectos p{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 20px;
+
+   text-align: center;
+   padding-top: 80px;
 }
 
 
@@ -277,6 +292,7 @@ h2{ padding-top: 100px;
    border:1px solid rgb(191, 190, 190);
    border-radius: 10px;
    margin-top: 25px;
+   
 
 }
 
@@ -287,6 +303,7 @@ h2{ padding-top: 100px;
     height:70%;
     padding-left:30px;
     padding-top: 20px;
+    border-radius: 40%;
 
 }
 
@@ -299,22 +316,23 @@ h2{ padding-top: 100px;
   
 }
 
-.proyectos h3{
+#proyectos h3{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 40px;
  } 
 
  /* Estilado de sección de contacto  */
 
 
  #contacto{
-    height: 600px;
+    height: 900px;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
     align-items: flex-end;
-    padding: 200px 130px 30px 130px;
-    margin: 250px 0px 0px 0px;
+    padding: 200px 130px 120px 130px;
+    margin: 0px 0px 0px 0px;
     background-color: #BB8082 ;
     
  }
@@ -331,6 +349,8 @@ h2{ padding-top: 100px;
  .contact-style h2{
     padding-top: 20px;
  }
+
+
  /* Sección de contacto via redes y mail (links) */
 
 
@@ -339,7 +359,12 @@ h2{ padding-top: 100px;
     line-height: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 50px;
- }
+
+   }
+
+.redes{
+   margin-top: 3px;
+}
 
  .redes img{
     width: 40px;
@@ -349,28 +374,20 @@ h2{ padding-top: 100px;
     background-color:#F39189;
     border-radius: 15px;
     
- }
+   }
 
  .redes a{
     color: white;
     font-family: 'Caveat', cursive;
     font-size: 25px;
     padding-left: 10px;
-   
     text-decoration: none;
- }
+
+   }
 
  .redes a:hover{
     color: #F9A826;
  }
-
- 
-
-
-
-
-
-
 
 
 
@@ -433,69 +450,149 @@ h2{ padding-top: 100px;
     flex-direction: row;
     list-style-type: none;
     
- }
+   }
+
 
  .pie-pagina a:hover{
     color: white;
  }
+
 
  .redes-position{
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 40px 250px 0px 130px;
- }
+   }
+
 
  .ajuste{
     margin-left: 0px;
  }
 
- .msj-final-autor{
-    margin-top: 50px;
+
+   .msj-final-autor{
+    margin-top: 30px;
     text-align: center;
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- }
+    
+   }
 
- .firma{
+
+   .firma{
     font-family: 'Caveat', cursive;
     font-size: 30px;
- }
+   }
+
 
  .heart{
     color: #F39189;
     font-size:30px ;
- }
+   }
 
 
-/* Sección de Media Queries*/
 
-@media(min-width: 600px){
+/* Sección de Media Queries */
+
+
+@media(max-width:350px) {
+
    header{
       display: none;
    }
 
+  /********************************/
+
+  #presentacion{
+    width: 150%;
+    height:1250px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+  
+   }
+
+  .estilo-foto{
+    width: 100%;
+    height: 100%;
+    padding-left: 60px; 
+  
+   }
+
+  .contenedor-foto-presentacion{
+     padding-bottom: 100px;
+   }
+
+
+  .info h1{
+     line-height: 1;
+     text-align: center;
+     padding-right: 80px; 
+
+   }
+
+  .parrafo-presentacion{
+    text-align: center;
+   }
+
+
+  .info h2{
+     padding-right: 80px;
+     text-align: center;
+   }
+
+  .info .cambio-boton{
+     display: flex;
+     justify-content: center;
+     width: 70%;
+     margin-left: 20px;
+   }
+
+   /******************************/
+
+
+  #conocimientos{
+    width: 150%;
+    height: 100%;
+  }
+
+   .div-habilidades h2{
+     padding-top: 20px;
+     width: 80%;
+     padding-left: 80px;
+   }
+   
+
    .posicion-iconos{
       display: flex;
       flex-direction: column;
+      width: 100%;
+      margin-left: 80px;
+      margin-right: 0px;
+   }
+
+   .icono{
+      width:300px;
+      height:300px;
      
    }
-   
-  
-   
-   .div-habilidades p{
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      font-size: 20px;
-      display: flex;
-      justify-content: center;
-      padding:40px 0 0 20px;
-      
+
+   .tamaño-icono{
+     width: 90%;
+     display: flex;
+     justify-content: center;
    }
+   
+ 
+ 
+
 
    #contacto{
       height: 1300px;
       
       flex-direction:column;
+      padding-left: 550px;
      
      
    }
@@ -510,24 +607,7 @@ h2{ padding-top: 100px;
 
    }
   
-   #presentacion{
-     
-      display: flex;
-      flex-direction: column;
-      height: 1300px;
-      padding-top: 0px;   
-   }
-
-  .estilo-foto{
-   width: 500px;
-   height: 500px;
-   padding-left: 100px;
-   }
-  
-   .info h1{
-   line-height: 1;
-   }
-
+ 
    .seccion-de-cita blockquote p{
       font-family: Montserrat;
       font-size:30px;
