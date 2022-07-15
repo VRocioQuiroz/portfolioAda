@@ -5,6 +5,7 @@ body{
 
 *{
     margin: 0;
+   
     
 }
 
@@ -39,7 +40,6 @@ nav{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:black;
    
- /*font-family: 'Montserrat', sans-serif;*/
 }
 
 .lista a:hover{
@@ -49,7 +49,7 @@ nav{
 
 
 .lista .cambio-boton:hover{
-    color: #F9A826;
+    color: purple;
     
 }
 
@@ -173,6 +173,7 @@ h2{ padding-top: 100px;
   
 }
 
+
 .posicion-iconos{
    display: flex;
    flex-direction: row;
@@ -191,7 +192,7 @@ h2{ padding-top: 100px;
 }
 
 .icono:hover{
-    color:#F9A826;
+    color:purple;
 }
 
 .informacion-extra{
@@ -211,14 +212,13 @@ h2{ padding-top: 100px;
    color: purple;
    font-size: 18px;
    padding-left: 25px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.informacion-extra a span{
-   
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   font-size: 18px;
-   color: black;
+.informacion-extra a:hover{
+   color:rgb(146, 35, 81);
 }
+
 
 /* Estilado de sección de cita  */
 
@@ -307,8 +307,7 @@ h2{ padding-top: 100px;
  /* Estilado de sección de contacto  */
 
 
- .contacto{
-    
+ #contacto{
     height: 600px;
     display:flex;
     flex-direction:row;
@@ -467,4 +466,80 @@ h2{ padding-top: 100px;
     color: #F39189;
     font-size:30px ;
  }
+
+
+/* Sección de Media Queries*/
+
+@media(min-width: 600px){
+   header{
+      display: none;
+   }
+
+   .posicion-iconos{
+      display: flex;
+      flex-direction: column;
+     
+   }
+   
+  
+   
+   .div-habilidades p{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      padding:40px 0 0 20px;
+      
+   }
+
+   #contacto{
+      height: 1300px;
+      
+      flex-direction:column;
+     
+     
+   }
+
+   .contact-style{
+      width:500px;
+      height: 600px;
+      background-color: #6E7582 ;
+      border-radius: 10%;
+      box-shadow: rgb(44, 62, 80) 0px 0px 15px 0px inset;
+    
+
+   }
+  
+   #presentacion{
+     
+      display: flex;
+      flex-direction: column;
+      height: 1300px;
+      padding-top: 0px;   
+   }
+
+  .estilo-foto{
+   width: 500px;
+   height: 500px;
+   padding-left: 100px;
+   }
+  
+   .info h1{
+   line-height: 1;
+   }
+
+   .seccion-de-cita blockquote p{
+      font-family: Montserrat;
+      font-size:30px;
+      text-align: center;
+      color: white;
+      margin-top:10%;
+  }
+  
+  .informacion-extra{
+   padding: 10px 20px ;
+  }
+   
+}
+
 
