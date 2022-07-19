@@ -8,6 +8,8 @@ body {
   box-sizing: border-box;
 }
 
+html, body{ max-width: 100%;}
+
 
 /* Estilado del encabezado: links de navegacion  */
 
@@ -80,11 +82,14 @@ nav {
 }
 
 .contenedor-foto-presentacion {
-  padding-right: 8%;
+  padding-right: 15%;
   padding-top: 8%;
   width: 80%;
 }
 
+.estilo-foto{
+  width: 140%;
+}
 
 
 .info {
@@ -108,7 +113,7 @@ nav {
 h1 {
   font-size: 80px;
   font-weight: 900;
-  color: rgb(249, 168, 38);
+  color: rgb(44, 9, 49);
   font-family: "Fascinate", cursive;
 }
 
@@ -188,10 +193,13 @@ h2 {
     "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
   text-align: center;
+  padding-top: 5%;
 }
 
 .icono:hover {
   color: purple;
+  border: 2px solid purple;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .informacion-extra {
@@ -217,7 +225,7 @@ h2 {
 }
 
 .informacion-extra a:hover {
-  color: rgb(146, 35, 81);
+  color: rgb(165, 2, 70);
 }
 
 
@@ -279,7 +287,9 @@ h2 {
   border: 1px solid purple;
   border-radius: 10px;
   margin-top: 50px;
-  background-color: #6e7582;
+/* background-color: #6e7582;*/
+  background-color:white;
+  
 }
 
 .img-proyectos {
@@ -289,7 +299,7 @@ h2 {
   height: 250px;
   padding-left: 12%;
   padding-top: 20px;
-  border-radius: 50%;
+ /* border-radius: 50%;*/
 }
 
 .posicion-proyectos {
@@ -314,6 +324,11 @@ h2 {
 .proyecto-especifico {
   overflow: hidden;
   z-index: 1;
+}
+
+.proyecto-especifico:hover{
+  border: 3px solid purple;
+  box-shadow:rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
 }
 
 
@@ -399,13 +414,13 @@ input[type="text"],
 [type="email"] {
   background-color: #f39189;
   height: 30px;
-  width: 285px;
+  width: 75%;
   border-radius: 15px;
   border: none;
 }
 
 input[type="email"] {
-  width: 300px;
+ width: 80%;
 }
 
 textarea {
@@ -450,15 +465,12 @@ input[type="submit"] {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 40px 250px 0px 130px;
-}
-
-.ajuste {
-  margin-left: 0px;
+  padding: 2% 8% 0 0;
 }
 
 .msj-final-autor {
-  margin-top: 30px;
+  margin-top: 2%;
+  padding-right: 4%;
   text-align: center;
   font-size: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -482,7 +494,7 @@ input[type="submit"] {
 @media (max-width: 600px) {
   header {
     display: none;
-   }
+  }
 
   /****************************/
 
@@ -490,114 +502,119 @@ input[type="submit"] {
     height: 1250px;
     display: flex;
     flex-direction: column;
-   }
-
-  .estilo-foto {
-    width: 100%;
-    height: 100%;
-    padding-left: 10%;
-   }
+  }
 
   .contenedor-foto-presentacion {
     padding-bottom: 100px;
-   }
+    margin-right: 10%;
+  }
 
   .info h1 {
     line-height: 1;
     text-align: center;
     padding-right: 10%;
-   }
+  }
 
   .parrafo-presentacion {
     display: flex;
     text-align: center;
-    padding-left: 50px;
-   }
+    padding-left: 10%;
+  }
 
   .info h2 {
     padding-right: 80px;
     text-align: center;
-   }
+  }
 
   .info .cambio-boton {
     display: flex;
     justify-content: center;
     width: 70%;
     margin-left: 10%;
-   }
+  }
 
   /******************************/
 
   #conocimientos {
     height: 100%;
-   }
+
+  }
 
   .div-habilidades h2 {
     width: 80%;
     padding-left: 10%;
-   }
+   
+  }
 
   .div-habilidades p {
     padding: 5% 20% 0 20%;
-   }
+
+  }
 
   .posicion-iconos {
-    display: flex; 
-   }
+    display: flex;
+
+  }
 
   .icono {
     width: 300px;
     height: 300px;
-   }
+
+  }
 
   .informacion-extra {
     padding-left: 10%;
     padding-right: 5%;
     height: 200px;
-   }
+
+  }
 
   /******************************/
 
-  .posicion-proyectos {
+  .posicion-proyectos{
     display: flex;
     flex-direction: column;
-    padding-right: 35%;
-   }
+    padding-left: 10%;
+   
+  }
 
   /*******************************/
 
   #contacto {
     height: 1300px;
     flex-direction: column;
-   }
+   
+  }
 
   .contact-style {
     width: 100%;
-   }
+ 
+  }
 
   .formulario {
     width: 100%;
-   }
+
+  }
 
   input[type="text"],
   [type="email"] {
-    width: 220px;
-   }
+    width: 65%;
+  }
 
   input[type="email"] {
-    width: 240px;
-   }
+    width: 70%;
+  }
 
   textarea {
     width: 99%;
-   }
+  }
 
 
   /****************************/
 
   .nav-pie {
     height: 550px;
-   }
+  }
 
   .pie-pagina {
     display: flex;
@@ -606,14 +623,106 @@ input[type="submit"] {
     font-size: 150%;
     line-height: 2;
     padding-left: 18%;
-   }
+  }
 
-  .redes-position {
-    padding-left: 200px;
-   }
-
-  .msj-final-autor {
-    font-size: 200%;
-   }
-   
 }
+/*************************************************************************************/
+
+@media(max-width:460px) {
+
+  .posicion-proyectos{
+    padding-left:5%;
+    margin-left: 0%;
+  }
+}
+
+/**********************************************************************************/
+
+
+@media (min-width:601px) and (max-width:991px){
+
+  header {
+    display: none;
+  }
+
+  /****************************/
+
+  #presentacion {
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .estilo-foto {
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+  }
+
+  .contenedor-foto-presentacion {
+    padding-bottom: 100px;
+  }
+
+  .info h1 {
+    line-height: 1;
+    text-align: center;
+    padding-right: 10%;
+  }
+
+  .parrafo-presentacion {
+    display: flex;
+    text-align: center;
+    padding-left: 10%;
+  }
+
+  .info h2 {
+    padding-right: 80px;
+    text-align: center;
+  }
+
+  .info .cambio-boton {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-left: 10%;
+  }
+ /*********************************/
+
+  #contacto {
+    height: 1300px;
+    flex-direction: column;
+    padding-left: 20% ;
+    padding-right: 20%;
+  }
+
+  .contact-style {
+    width: 100%;
+    margin-bottom: 4%;
+  
+  }
+
+
+  .formulario {
+    width:100%;
+
+  }
+
+  input[type="text"],
+  [type="email"] {
+    width:65%;
+  }
+
+  input[type="email"] {
+    width:70%;
+  }
+
+  textarea {
+    width: 99%;
+  }
+
+}
+
+/************************************************************/
+
+@media (min-width:992px) and (max-width:991px)
+
