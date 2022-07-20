@@ -50,7 +50,8 @@ nav {
 }
 
 .lista .cambio-boton:hover {
-  color: purple;
+  color: #fd0277;
+  font-weight: 900;
 }
 
 .cambio-boton {
@@ -124,8 +125,13 @@ h1 {
   text-align: left;
 }
 
+.info .cambio-boton{
+  text-decoration: none;
+}
+
 .info .cambio-boton:hover {
-  color: #f9a826;
+  color: #fd0277;
+  font-weight: 900;
 }
 
 
@@ -225,7 +231,7 @@ h2 {
 }
 
 .informacion-extra a:hover {
-  color: rgb(165, 2, 70);
+  color: #fd0277;
 }
 
 
@@ -540,11 +546,6 @@ input[type="submit"] {
 
   }
 
-  .div-habilidades h2 {
-    width: 80%;
-    padding-left: 10%;
-   
-  }
 
   .div-habilidades p {
     padding: 5% 20% 0 20%;
@@ -563,10 +564,15 @@ input[type="submit"] {
   }
 
   .informacion-extra {
-    padding-left: 10%;
+    padding-left: 5%;
     padding-right: 5%;
     height: 200px;
 
+  }
+  /******************************/
+
+  .seccion-de-cita{
+    height: 600px;
   }
 
   /******************************/
@@ -625,6 +631,12 @@ input[type="submit"] {
     padding-left: 18%;
   }
 
+  .redes-position{
+    padding-right: 15%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
 }
 /*************************************************************************************/
 
@@ -654,9 +666,9 @@ input[type="submit"] {
   }
 
   .estilo-foto {
-    width: 100%;
+    width: 150%;
     height: 100%;
-    padding-left: 10%;
+    padding-right: 25%;
   }
 
   .contenedor-foto-presentacion {
@@ -689,7 +701,7 @@ input[type="submit"] {
  /*********************************/
 
   #contacto {
-    height: 1300px;
+    height: 1400px;
     flex-direction: column;
     padding-left: 20% ;
     padding-right: 20%;
@@ -709,20 +721,51 @@ input[type="submit"] {
 
   input[type="text"],
   [type="email"] {
-    width:65%;
+    width:70%;
   }
 
   input[type="email"] {
-    width:70%;
+    width:75%;
   }
 
   textarea {
     width: 99%;
+  }
+  /*******************/
+
+  .contenedor-links-pie{
+    padding-left: 5%;
   }
 
 }
 
 /************************************************************/
 
-@media (min-width:992px) and (max-width:991px)
+@media (min-width:992px) and (max-width:1050px){
+  .contact-style{
+    width: 95%;
+    margin-left: 1%;
+    
+   
+  }
+
+  .contenedor-links-pie{
+    padding-left: 5%;
+  }
+
+}
+
+/***************************************************************/
+
+@media (min-width:992px) and (max-width:1185px){
+
+  .info h2{
+    margin-top: 10%;
+  }
+
+  h1{
+    line-height: 1;
+  }
+
+}
 
