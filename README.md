@@ -2,7 +2,6 @@
 
 > *Primer proyecto Front End para Ada ITW*   
 
-![Valeria Rocio Quiroz](imagenes/quiroz-Rocio.jpg)
 
 ### [¡Hecha un vistazo!](https://vrocioquiroz.github.io/portfolioAda/)
 
@@ -11,7 +10,7 @@ de los futuros proyectos que iremos haciendo a lo largo del curso de Desarrollad
 En el mismo desarrollaremos la estructura, los estilos y las secciones principales.
 
 
-### Lenguajes de programación utilizados para crear este sitio::
+### Lenguajes utilizados para crear este sitio:
 :small_orange_diamond:  HTML5
 
 :small_orange_diamond:  CSS3
